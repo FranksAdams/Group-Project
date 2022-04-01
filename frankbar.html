@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="frankbar.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body onload="startCountdown(); typeWriter();"></body>>
+<div id="splash">
+    <h1 id="splash-header">
+        <span class="sptxt">The</span><br><span class="sptxt">Bar...</span>
+    </h1>
+</div>
+
+<!-- Customer1 -->
+<div id="container">
+    <p id="text1"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="hide(); clickPlay(); typeWriter1(); ">Okay!</button>
+    </div>
+</div>
+
+<div id="container1" class="containers">
+    <p id="text2"></p>
+    <div>
+        <form id="form1" onsubmit="return false;">
+            <label for="answer">Answer:</label>
+            <input type="text" id="ans1" class="answers">
+            <input id="submit1" type="submit" title="Are you sure?" value="Submit" onclick="hide1(); validate();">
+    </div>
+</div>
+
+<div id="container2" class="containers">
+    <p id="text3"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="nextCustomer(); typeWriter4();">Next Customer</button>
+    </div>
+</div>
+
+<div id="container3">
+    <p id="text4"></p>
+    <div>
+        <form id="form2" onsubmit="return false;">
+            <label for="answer">Answer:</label>
+            <input type="text" id="ans2" class="answers">
+            <input id="submit2" type="submit" title="Are you sure?" value="Submit" onclick="validate2();">
+    </div>
+</div>
+
+<div id="container4">
+    <p id="text5"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick=" ">Get Manager</button>
+    </div>
+</div>
+
+<div id="container5">
+    <p id="text6"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="nextCustomer(); typeWriter4(); ">Next Customer!</button>
+    </div>
+</div>
+<!-- End Customer1 -->
+
+<!-- Customer2 -->
+<div id="container6">
+    <p id="text7"></p>
+    <div>
+        <form id="form3" onsubmit="return false;">
+            <label for="answer">Answer:</label>
+            <input type="text" id="ans3" class="answers">
+            <input id="submit3" type="submit" title="Are you sure?" value="Submit" onclick="hide2(); validate3();">
+    </div>
+</div>
+
+<div id="container7">
+    <p id="text8"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="nextCustomer2(); typeWriter7();">Next Customer</button>
+    </div>
+</div>
+
+<div id="container8">
+    <p id="text9"></p>
+    <div>
+        <form id="form4" onsubmit="return false;">
+            <label for="answer">Answer:</label>
+            <input type="text" id="ans4" class="answers">
+            <input id="submit4" type="submit" title="Are you sure?" value="Submit" onclick="validate4();">
+    </div>
+</div>
+
+<div id="container9">
+    <p id="text10"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick=" ">Get Manager</button>
+    </div>
+</div>
+
+<div id="container10">
+    <p id="text11"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="nextCustomer2(); typeWriter7(); ">Next Customer!</button>
+    </div>
+</div>
+<!-- End Customer2 -->
+
+<!-- Customer3 -->
+<div id="container11">
+    <p id="text12"></p>
+    <div>
+        <form id="form5" onsubmit="return false;">
+            <label for="answer">Answer:</label>
+            <input type="text" id="ans5" class="answers">
+            <input id="submit5" type="submit" title="Are you sure?" value="Submit" onclick="hide3(); validate5();">
+    </div>
+</div>
+
+<div id="container12">
+    <p id="text13"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="managerMS(); typeWriter10();">Talk to Manager.</button>
+    </div>
+</div>
+
+<div id="container13">
+    <p id="text14"></p>
+    <div>
+        <form id="form6" onsubmit="return false;">
+            <label for="answer">Answer:</label>
+            <input type="text" id="ans6" class="answers">
+            <input id="submit6" type="submit" title="Are you sure?" value="Submit" onclick="validate6();">
+    </div>
+</div>
+
+<div id="container14">
+    <p id="text15"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick=" ">Get Manager</button>
+    </div>
+</div>
+
+<div id="container15">
+    <p id="text16"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="managerMS(); typeWriter10(); ">Talk to Manager.</button>
+    </div>
+</div>
+<!-- End Customer3 -->
+
+<!-- Manager Message -->
+<div id="container16">
+    <p id="text17"></p>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn" onclick="managerHide(); ">Okay!</button>
+    </div>
+</div>
+<!--End Manager Message -->
+
+
+<div id = wholeTimer>
+<h1>Timer: </h1>
+<h1 id="timeOut"></h1>
+</div>
+
+<div>
+    <h1 id ="points1"> Points: </h1>
+</div>
+
+<a href="#" id="DoorLink">
+    <img id="toilet-door" src="img/toiletdoor.png" alt="toilet door" onclick="doorlock()"></a>
+
+<div id="keg1"><img id="keg-one" src="img/keg.png" alt="keg"></div>
+<div id="keg2"><img id="keg-two" src="img/keg.png" alt="keg"></div>
+<div id="prices"><img id="price-list" src="img/price-list.png" alt="Price List"></div>
+
+<button id=drunkbutton onclick="drunkEffect();"> Drunk!</button>
+
+<audio id="audio1" src="bar-background-audio.mp3"></audio>
+<script type="text/javascript" src="animation.js"></script>
+<script type="text/javascript" src="frankbar.js"></script>
+</body>
+
+</html>

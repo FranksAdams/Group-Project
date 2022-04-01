@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bar Simulator</title>
+        <script src="script_emily2.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="style_emily2.css">
+
+<body class="bg">
+    <div  id="pointadd">
+        <h3 id="pointText">Score: </h3>
+    </div>
+    <div id="splash">
+        <h1 id="splash-header">
+            <span class="sptxt">Here is your</span><br><span class="sptxt">First Customer...</span>
+        </h1>
+    </div>
+
+    <div id="show">
+
+        <h1 id="customer1">Customer 1:</h1><br>
+
+        <p>Your first customer has arrived, they look suspiciously young.
+            Should you check their ID to see what age they are?
+        </p><br><br>
+
+        <button class="underage" id="dontCheck" onclick="noCheckFunction(); subPointid();"> Don't check their ID and serve them anyway</button>
+
+       
+        <button class="underage" id="doCheck" onclick="yesCheckFunction(); addPointid();"  >Ask for a form of ID for you to check</button>
+    
+    </div>
+
+    <div id="hide">
+
+        <div id="showDOB">
+            <p id="customerDOB" >The customers date of birth is 06/03/1981, will you serve them?</p><br>
+            <a href="frankbar.html" id="page3">
+            <button class="underage" id="serveThem" onclick="yesFunction3(); subPointid(); ">Yes, they are above the age of 18.</button></a>
+            <a href="frankbar.html" id="page3">
+            <button class="underage" id="fishy" onclick="yesFunction2(); addPointid();">No, something about them looks fishy...</button>
+            </a>
+        </div>
+
+        <div class="imageID" id="imageID1">
+        <img src="img/id.jpeg" alt="image of an ID" id="imageID">
+        </div>
+        
+        <br>
+
+        <div id="fakeID">
+            <p class="fakeID">The customer was CLEARLY using a fake ID and you didnt check it!</p>
+        </div>
+
+        <div class="fakeID2" id="fakeID2">
+            <p class="fakeID2">The customer was CLEARLY using a fake ID and you noticed!</p>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="animation.js"></script>
+</body>
+
+</html>

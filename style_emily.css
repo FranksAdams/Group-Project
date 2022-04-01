@@ -1,0 +1,237 @@
+*{
+ 
+  padding: 0%;
+  margin: 10;
+  overflow-x: hidden;
+ 
+
+}
+
+
+.bg{
+  height: 850px;
+  padding: 0px;
+  zoom: 1;
+  display: block;
+  *display: inline;
+  *float: none;
+  background-image: url(img/bar3.jpeg);
+  background-repeat:no-repeat;
+  background-color:white;
+  background-attachment: fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+h1, p, form{
+    text-align: center;
+    font-family: cursive;
+    color:black;
+    font-size: 25px;
+  
+}
+
+h1,#fname,#ageDetail,#favDrink,#enterEmail,#pickBar{
+  background-color: yellow;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+p{
+    background-color: yellow;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+p, form{
+  font-weight: bolder;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+  border-radius: 4px;
+}
+
+input[type=number] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+  border-radius: 4px;
+}
+
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+  border-radius: 4px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+button{
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+  border-radius: 4px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+#bar{
+  width: auto;
+  font-size: 20px;
+  font-family: cursive;
+  padding: 16px 20px;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  background-color:white;
+}
+
+
+  
+
+.drinks {
+text-align: center;
+margin: auto;
+width: 300px;
+display: block;
+position: relative;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-color: white;
+box-sizing: border-box;
+border: 2px solid yellow;
+border-radius: 4px;
+font-family: cursive;
+font-weight: bolder;
+}
+/* Hide the browser's default checkbox */
+.drinks input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+text-align: center;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 290;
+left: 290;
+height: 25px;
+width: 25px;
+background-color: #eee;
+text-align: center;
+}
+
+/* On mouse-over, add a grey background color */
+.drinks:hover input ~ .checkmark {
+background-color: white;
+text-align: center;
+}
+
+/* When the checkbox is checked, add a yellow background */
+.drinks input:checked ~ .checkmark {
+background-color: yellow;
+text-align: center;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+text-align: center;
+}
+
+/* Show the checkmark when checked */
+.drinks input:checked ~ .checkmark:after {
+display: block;
+text-align: center;
+}
+
+/* Style the checkmark/indicator */
+.drinks .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+text-align: center;
+}
+
+#splash {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  transition: 1s;
+}
+
+#splash-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  background-color: black;
+}
+
+.sptxt {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.sptxt.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.sptxt.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+
+

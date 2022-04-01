@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+            <title> You're Fired </title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   span  {
+       text-emphasis: center;
+   }
+.checked, p, h2{
+  color: green;
+  text-align: center;
+ 
+}
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: green;
+}
+body {
+  background-color: grey;
+  font-family: cursive;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
+  }
+  
+}
+</style>
+    </head>
+    <body>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+
+<h1 class="glow">YOU'RE FIRED!!!</h1>
+
+        <P> The manager was unhappy with your work habits. They felt that you were bad
+            bad for buisness. 
+        </P>
+
+            <p> END OF GAME</p>
+
+            <h2>Average Rating of Game</h2>
+      
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+    </body>
+</Html>

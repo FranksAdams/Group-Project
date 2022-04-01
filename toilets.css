@@ -1,0 +1,151 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+body {
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/toilet-room.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#splash {
+position: fixed;
+z-index: 5;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+background-color: black;
+transition: 1s;
+}
+
+#splash-header {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.sptxt {
+position: relative;
+display: inline-block;
+bottom: -20px;
+opacity: 0;
+}
+
+.sptxt.active {
+bottom: 0;
+opacity: 1;
+transition: ease-in-out 0.5s;
+}
+
+.sptxt.fade {
+bottom: 150px;
+opacity: 0;
+transition: ease-in-out 0.5s;
+}
+#container{
+    position:fixed; bottom:10%; left: 10%;
+    width: 400px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border:2px solid red;
+    }
+#beer-one{
+    position:fixed; TOP:350px; RIGHT: 270px;
+height: 80px; 
+width: 35px;
+cursor: pointer;
+}
+
+#beer-two{
+    position:fixed; TOP:600px; RIGHT: 270px;
+height: 130px; 
+width: 65px;
+cursor: pointer;
+}
+#beer-three{
+    position:fixed; TOP:450px; RIGHT: 100px;
+    height: 80px; 
+    width: 35px;
+    transform: rotate(90deg);
+    cursor: pointer;
+ }
+ #hide{
+     visibility: hidden;
+ }
+
+ #tin-one{
+    position:fixed; TOP:450px; LEFT: 270px;
+height: 75px; 
+width: 35px;
+cursor: pointer;
+}
+#tin-two{
+    position:fixed; TOP:470px; LEFT: 320px;
+height: 75px; 
+width: 35px;
+cursor: pointer;
+}
+#tin-three{
+    position:fixed; TOP:500px; LEFT: 320px;
+height: 75px; 
+width: 35px;
+cursor: pointer;
+transform: rotate(90deg);
+}
+
+#graffiti-one{
+    position:fixed; TOP:150px; LEFT: 320px;
+height: 75px; 
+width: 35px;
+cursor: pointer;
+}
+
+#facemask-one{
+    position:fixed; bottom: 20%; LEFT: 50%;
+height: 75px; 
+width: 70px;
+cursor: pointer;
+}
+#cigarettes{
+    position:fixed; TOP:600px; LEFT: 720px;
+height: 75px; 
+width: 70px;
+cursor: pointer;
+}
+
+
+@media screen and (max-width: 1280px) {
+             #beer-one, #beer-two, #beer-three{
+                position:fixed; TOP:600px;
+            }
+        }
+        #backLevel {
+            width: 100%;
+            height: 50px;
+            padding: 0px;
+            border: 2px solid black;
+            background-color: red;
+        }
+        
+        #frontLevel {
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            color:white;
+        }
+        #timeOut {
+            color: blue;
+        }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toilets</title>
+    <link href="toilets.css" rel="stylesheet">
+    
+    
+</head>
+<body onload="startCountdown();"onclick=" PlayMusic();">
+    <div id="splash">
+        <h1 id="splash-header">
+            <span class="sptxt">The</span><br><span class="sptxt">Toilets...</span>
+        </h1>
+    </div>
+    <div id = "toilet-room"></div>
+    
+    <div id ="container">
+        <p id ="text">God! This place is a mess, I better clean it up before someone sees this..</p>
+    </div>
+
+    <div id="beer1"><img id = "beer-one" src ="img/beer-bottle.png" onclick="this.style.display='none'; addPoint(); " alt = "beer bottle"></div>
+    <div id="beer2"><img id = "beer-two" src ="img/beer-bottle.png" onclick="this.style.display='none';addPoint();" alt = "beer bottle"></div>
+    <div id="beer3"><img id = "beer-three" src ="img/beer-bottle.png" onclick="this.style.display='none';addPoint();" alt = "beer bottle"></div>
+
+    <div id="tin1"><img id = "tin-one" src ="img/tin-can.png" onclick="this.style.display='none';addPoint();" alt = "tin can"></div>
+    <div id="tin2"><img id = "tin-two" src ="img/tin-can.png" onclick="this.style.display='none';addPoint();" alt = "tin can"></div>
+    <div id="tin3"><img id = "tin-three" src ="img/tin-can.png" onclick="this.style.display='none';addPoint();" alt = "tin can"></div>
+
+    <div id="graffiti1"><img id = "graffiti-one" src ="img/graffiti.png" onclick="this.style.display='none';addPoint();" alt = "graffiti"></div>
+
+    <div id="facemask1"><img id = "facemask-one" src ="img/face-mask.png" onclick="this.style.display='none';addPoint();" alt = "facemask"></div>
+    <div id="cigs"><img id = "cigarettes" src ="img/cigs.png" onclick="this.style.display='none';addPoint();" alt = "cigarettes"></div>
+   
+        <h1>Timer: </h1>
+        <div id="backLevel">
+            <div id="frontLevel">
+
+            </div>
+        </div>
+        <h1 id="timeOut"></h1>
+   
+
+    <audio id="audio2" src="toilet-background-noise.mp3"></audio>
+
+    <script type="text/javascript" src="animation.js"></script>
+    <script type="text/javascript" src="toilet.js"></script>
+</body>
+</html>

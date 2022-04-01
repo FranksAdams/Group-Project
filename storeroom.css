@@ -1,0 +1,91 @@
+
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-color: #000;
+            color: #fff;
+        }
+        #splash {
+            position: fixed;
+            z-index: 5;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            transition: 1s;
+        }
+        
+        #splash-header {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        
+        .sptxt {
+            position: relative;
+            display: inline-block;
+            bottom: -20px;
+            opacity: 0;
+        }
+        
+        .sptxt.active {
+            bottom: 0;
+            opacity: 1;
+            transition: ease-in-out 0.5s;
+        }
+        
+        .sptxt.fade {
+            bottom: 150px;
+            opacity: 0;
+            transition: ease-in-out 0.5s;
+        }
+  
+        /* Styling the heading */
+        h1 {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+  
+        /* Position the mouse pointer and
+            the background image */
+        .main_box,
+        .img,
+        .mouse {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+          
+        .main_box {
+            cursor:pointer;
+            margin-top: 3em;
+        }
+          
+        .img,
+        .mouse {
+            background-image: url("img/storeroom.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+  
+        /* Reduce the brightness of the image */
+        .img {
+            filter: brightness(3%);
+        }
+  
+        /* Make a circle with the clip-path property
+            for the spotlight in the effect */
+        .mouse {
+            clip-path: circle(5em at 0, 0);
+        }

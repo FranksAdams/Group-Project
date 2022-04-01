@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Bar Simulator</title>
+    
+    <link rel="stylesheet" href="style_emily.css">
+    </head>
+    <body class="bg">
+        <script type="text/javascript" src="script_emily.js"></script>
+
+        <div id="splash">
+            <h1 id="splash-header">
+                <span class="sptxt">Bar</span><br><span class="sptxt">Simulator...</span>
+            </h1>
+        </div>
+    
+        <h1>Bar Simulator</h1><br>
+        <p>To apply for a trial shift in the bar of your choice please enter your details below:</p><br>
+        <form onsubmit="ageFunction();">
+            <label for="fname" id="fname">Hey what's your name?</label><br>
+            <input type="text" id="name" required minlength="1" maxlength="100" ><br><br>
+
+
+           
+            <label for="age" id="ageDetail"> What age are you? </label><br>
+             <input type="number" min="18" id="age">
+            <p id="age1"></p><br>
+            
+          
+          <label for="drinks" id="favDrink"> What is your favorite drink?</label><br><br>
+
+           <label class="drinks"> Vodka Coke <input type="radio"  checked="checked" name="radio"> 
+            <span class="checkmark"></span></label><br>
+           
+           
+            <label class="drinks">Guinness  <input type="radio" checked="checked" name="radio" >
+            <span class="checkmark"></span></span> </label><br>
+
+            
+            <label class="drinks" >Water<input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span></label><br>
+
+            <label class="drinks" >Strawberry Daiquiri <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span></label><br>
+
+            <label class="drinks" >Martini <input type="radio" checked="checked" name="radio">
+             <span class="checkmark"></span></label><br>
+
+            <label class="drinks" >Beer <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span></label><br>
+
+            <label class="drinks" >Tequila <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span></label><br>
+
+            <label for="email" id="enterEmail">Enter your email:</label><br>
+             <input type="email" id="email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required minlength="11" maxlength="50"><br><br>
+
+            <label for="bar" id="pickBar">Pick a bar:</label><br>
+            <select id="bar" name="bar">
+            <option value="bar" class="bar">Laverys</option>
+            <option value="bar" class="bar">Limelight</option>
+            <option value="bar" class="bar">Thompsons</option>
+            </select><br><br>
+
+            
+            <input type="submit" onsubmit="succesful();" onclick="nextFunction()" value="Click here to submit your details!"></a>
+
+           
+
+        </form>
+        <script src="script_emily.js"></script>
+        <script type="text/javascript" src="animation.js"></script>
+    </body>
+</html>
